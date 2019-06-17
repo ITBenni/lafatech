@@ -1,0 +1,14 @@
+{{ $people := .Site.GetPage "/people" }}
+{{ $filter := .Get "filter" }}
+
+<ul class="people circle-list">
+	{{ range where $people.Resources ".Params.role" "in" $filter }}
+	<li>
+		<img src="/img/people/{{ safeHTMLAttr .Params.image }}" alt="{{ safeHTMLAttr .Params.academic_title }} {{ safeHTMLAttr .Params.name }}">
+		<p class="name">{{ safeHTMLAttr .Params.academic_title }} {{ safeHTMLAttr .Params.name }}</p>
+		<p>{{ .Params.job }}</p>
+
+		{{/*<blockquote>{{ .Params.quote }}</blockquote>*/}}
+	</li>
+	{{ end }}
+</ul>

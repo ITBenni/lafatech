@@ -1,0 +1,209 @@
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; box-sizing: border-box;}
+
+/* Typography */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 100;
+	src: url('/fonts/roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/roboto/Roboto-Medium.ttf');
+}
+
+
+@font-face {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/fontawesome/fa-solid-900.eot");
+	src: url("/fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("/fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("/fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+html { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; }
+
+h1 { font-size: 45px; font-weight: normal; }
+h2 { font-size: 40px; font-weight: normal; }
+
+a { text-decoration: none; color: inherit; }
+
+
+/* Colors */
+/*
+https://color.adobe.com/create/color-wheel/?base=2&rule=Triad&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.2019607843137255,0.020196078431372545,0.020196078431372545,0.5519607843137255,0.5452838393421946,0.05519607843137254,0.5019607843137255,0,0,0.03019607843137254,0.19706914344689577,0.30196078431372547,0.04009803921568631,0.5079084967321478,0.8019607843137255&swatchOrder=0,1,2,3,4
+*/
+html {
+	--bg-color: white;
+	--font-color: black;
+	--font-color-muted: #333333;
+	--main-accent-color: #800000;
+	--main-accent-color-muted: #330000;
+	--secondary-accent-color: #008024;
+	--secondary-accent-color-muted: #00330F;
+	--shadow-color: lightgrey;
+}
+
+/* Animations and effects */
+body > * { transition: all 0.25s ease-in-out; }
+nav a:hover { color: var(--main-accent-color); }
+
+
+/* Page and body */
+html, body, header, nav, section, ul { margin: 0; padding: 0; }
+html, body { width: 100%; }
+body { min-height: 98vh; }
+
+
+/* Header */
+/* https://www.pexels.com/de/foto/alphabet-art-autor-brief-261626/ */
+/* https://www.pexels.com/de/foto/licht-lampe-idee-kraft-45072/ */
+/*
+	https://www.pexels.com/de/foto/schreibtisch-staub-bleistift-arbeitsplatz-88733/
+	https://www.pexels.com/de/foto/apple-bucher-frucht-tafel-60583/
+*/
+/*body > header { width: 100%; height: 400px; display: flex; flex-direction: column; justify-content: center; flex-wrap: wrap; border: 0.1px solid transparent; background: var(--bg-color) url("/img/art-artistic-arts-and-crafts-1153895_cropped.jpg") top left no-repeat; background-size: cover; color: var(--bg-color); text-shadow: 0px 1px 3px var(--font-color-muted); }*/
+body > header { width: 100%; height: 400px; display: flex; flex-direction: column; justify-content: center; flex-wrap: wrap; border: 0.1px solid transparent; background: var(--bg-color) url("/img/header_watch.jpg") no-repeat; background-size: cover; color: var(--bg-color); text-shadow: 0px 1px 3px var(--font-color-muted); }
+body > header > h1 { display: block; width: 90%; max-width: 900px; flex: 0 1 auto; margin: 0 auto 10px auto; }
+body > header > h2 { display: block; width: 90%; max-width: 900px; flex: 0 1 auto; margin: 0 auto; }
+
+
+/* Main navigation */
+body > nav { position: fixed; top: 0; width: 100%; z-index: 10; height: 75px; border-bottom: 1px solid var(--shadow-color); background-color: rgba(255,255,255,0.3); line-height: 75px; font-weight: bold; color: black; }
+body > nav.scrolled { height: 40px; line-height: 40px; background-color: var(--bg-color); color: var(--font-color); }
+body > nav > div { display: flex; flex-wrap: nowrap; justify-content: space-between; max-width: 1000px; margin: 0 auto; height: 100%; }
+
+body > nav ul { flex: 0 1 auto; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; height: 100%; }
+body > nav ul > li { flex: 0 1 auto; margin-right: 25px; text-align: center; list-style-type: none;}
+body > nav ul > li:last-child {margin: 0; }
+body > nav ul > li.visible { border-bottom: 3px solid var(--main-accent-color); color: var(--main-accent-color); }
+
+body > nav a#logo { display: block; flex: 0 1 175px; height: 100%; color: transparent; background: transparent url("/img/logo.png") left no-repeat; background-size: contain; line-height: inherit; vertical-align: middle; text-decoration: none; }
+body > nav button { display: none; }
+
+
+/* Main content container */
+body > main { width: 90%; max-width: 900px; margin: 0 auto; }
+
+
+/* Footer */
+body > footer { margin-bottom: 25px; padding: 0 calc(calc(100% - 900px) / 2); display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; border-top: 1px solid var(--shadow-color); }
+body > footer > section { flex: 0 1 250px; }
+body > footer > section:nth-child(1), body > footer > section:nth-child(3) {margin-top: 55px; }
+body > footer p { display: block; margin: 0 auto; }
+body > footer address { font-style: normal; }
+body > footer li { list-style-type: none; }
+
+
+/* Content sections */
+body > main > section { width: 100%; margin-top: 110px; padding-bottom: 25px; }
+body > main > section:not(:last-child) { border-bottom: 1px solid var(--shadow-color); }
+footer a.top { width: 0; height: 0; }
+footer a.top:before { display: block; content: "\f106"; width: 50px; margin: 0 auto; font-size: 50px; font-family: FontAwesome; text-align: center; }
+footer a { color: var(--main-accent-color); }
+
+
+main h2 { text-align: center; margin-bottom: 75px; /*word-break: break-all; hyphens: auto;*/ }
+main p { line-height: 2em; }
+main a { color: var(--main-accent-color); }
+main ul, main ol { padding-left: 20px; }
+main li { margin-bottom: 10px; }
+
+/* Special content */
+/* Intro text right below header*/
+body > main > p { margin-top: 50px; }
+
+/* Publish date in current section */
+main .publishDate { display: block; margin: -75px auto 0 auto; text-align: center; color: var(--main-accent-color); }
+
+/* Centered lists with icons or images*/
+ul.block-list { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 auto; padding: 0; }
+ul.block-list > li { flex: 0 1 250px; max-width: 250px; margin-bottom: 50px; text-align: center; list-style-type: none; }
+
+ul.circle-list { display: flex; flex-wrap: wrap; justify-content: space-around; margin: 0 auto; padding: 0; }
+ul.circle-list > li { flex: 0 1 300px; max-width: none; text-align: center; list-style-type: none; margin-bottom: 50px; }
+
+/* People list with funny circles */
+ul.people > li > img { display: block; margin: 0 auto 25px auto; border-radius: 50% 50%; background-color: inherit; width: 250px; height: 250px; }
+ul.people > li > p { display: block; text-align: center; margin: 0 auto; }
+ul.people > li > p.name { font-weight: bold; }
+ul.people > li > blockquote { margin: 50px 0 auto 0; }
+
+/* Task list with icons */
+/* Pdf: f1c1 */
+#tasks > :before { display: block; margin: 0 auto; font-family: "FontAwesome"; font-weight: 400; font-size: 75px; text-align: center; color: var(--font-color-muted); margin: 25px 0; }
+#tasks > #politics:before { content: "\f19c"; }
+#tasks > #plans:before 	{ content: "\f279"; }
+#tasks > #lectures:before { content: "\f51c"; }
+#tasks > #expert:before { content: "\f4c4"; }
+#tasks > #juniors:before { content: "\f501"; }
+#tasks > #history:before { content: "\f518"; }
+
+/* Logo list*/
+#areas a { display: block; width: 100%; margin: 0 auto; color: var(--font-color); font-weight: bold; }
+#areas a:before { content: ""; display: block; width: 100%; height: 150px; margin: 0 auto; background-size: contain; background-position: center; background-repeat: no-repeat; filter: opacity(.8);}
+#areas a:hover:before { filter: opacity(1);}
+#areas > #heidelberg > a:before { background-image: url("/img/ph_heidelberg_logo.svg"); }
+#areas > #ludwigsburg > a:before { background-image: url("/img/ph_ludwigsburg_logo.svg"); }
+#areas > #gmuend > a:before { background-image: url("/img/ph_gmuend_logo.svg"); }
+#areas > #karlsruhe > a:before { background-image: url("/img/ph_karlsruhe_logo.svg"); }
+#areas > #freiburg > a:before { background-image: url("/img/ph_freiburg_logo.svg"); }
+#areas > #weingarten > a:before { background-image: url("/img/ph_weingarten_logo.svg"); }
+
+/* Download area */
+#veröffentlichungen ul { list-style-type: none; padding: 0; }
+#veröffentlichungen li { margin-bottom: 50px; }
+#veröffentlichungen li:before { content: "\f1c1"; font-family: "FontAwesome"; font-size: 30px; margin-right: 10px; display: inline-block; }
+#veröffentlichungen li > p:first-child { display: inline-block; }
+/*#veröffentlichungen li > p:nth-child(2) { margin-left: 30px; }*/
+
+
+@media only screen and (max-width : 640px) {
+	h1 { font-size: 30px; }
+	h2 { font-size: 25px; }
+
+	body > header { height: auto; background-position: center; }
+	body > header > h1 { margin-top: 70px;}
+	body > header > h2 { margin-bottom: 10px; }
+
+	body > nav { height: 50px; width: 100%; }
+	body > nav.scrolled { height: 50px; }
+	body > nav > div { display: flex; height: auto; justify-content: space-between; flex-wrap: wrap; background-color: var(--bg-color); color: black; border-bottom: 1px solid var(--main-accent-color);}
+	body > nav a { flex: 0 1 auto; }
+	body > nav a#logo { height: 50px; margin-left: 10px; }
+	body > nav button#menu-icon { display: block; flex: 0 1 50px; height: 50px; font-size: 25px; border: none; background-color: transparent; font-family: "FontAwesome"; }
+	body > nav ul { display: none; }
+
+	body > nav.visible ul { flex: 0 1 100%; display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--shadow-color); }
+	body > nav.visible ul > li { flex: 0 1 100%; height: 50px; margin: 0; line-height: 1.5em; }
+
+	body > main > section { margin-top: 90px; }
+	body > main ul.block-list { justify-content: space-around; }
+	body > main ul.block-list > li { justify-content: space-around; max-width: 150px;}
+
+	body > footer { width: 90%; margin: 0 auto 25px auto; }
+}
+
+@media only screen and (min-width : 640px) {
+	body > nav { padding: 0 10px; }
+}

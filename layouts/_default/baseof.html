@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "de" }}" prefix="og: http://ogp.me/ns#">
+
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+    {{ partial "nav.html" . }}
+
+    <main>
+        {{ block "main" . }}
+        {{end}}
+    </main>
+
+    {{ partial "footer.html" . }}
+</body>
+</html>

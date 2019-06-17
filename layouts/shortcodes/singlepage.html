@@ -1,0 +1,21 @@
+
+{{ $content_dir := .Get "content_dir" | default "home" }}
+{{ $sections := .Site.GetPage $content_dir }}
+
+{{ range $sections.Resources }}
+	{{ if eq .Type "hero" }}
+		{{ .Content }}
+	{{ else }}
+	<section id="{{ anchorize .Params.nav.shorthand}}">
+		<header>
+			<h2>{{ .Title }}</h2>
+
+			{{ if eq .File.BaseFileName "current"}}
+			<p class="publishDate">Stand: {{ .Lastmod.Day }} {{ index .Site.Data.months (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}</p>
+			{{ end }}
+		</header>
+
+		{{ .Content | safeHTML }}
+	</section>
+	{{ end }}
+{{ end }}

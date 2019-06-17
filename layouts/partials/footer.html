@@ -1,0 +1,21 @@
+<footer>
+	<section id="legal">
+		{{ $imprint := .Site.GetPage "/recht" }}
+		<p>Lesen Sie unser <a href="{{ $imprint.Permalink }}#impressum">Impressum</a></p>
+		<p>Lesen Sie unsere <a href="{{ $imprint.Permalink }}/#datenschutz">Datenschutzerklärung</a></p>
+	</section>
+	<section id="contact">
+		<h3>Kontakt</h3>
+		<address>
+			Dr. hab. Martin Binder<br>
+			(1. Vorsitzender)<br>
+			Kirchplatz 2<br>
+			88250 Weingarten<br>
+			Tel.: <a href="tel:+4907515018323">0751/50 18 323</a><br>
+			<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x62;&#105;&#x6e;&#100;&#x65;&#x72;&#x6d;&#64;&#112;&#104;-&#119;&#101;&#105;&#110;&#103;&#97;&#x72;&#x74;&#101;&#110;&#46;&#100;&#x65;">&#x62;&#105;&#x6e;&#100;&#x65;&#x72;&#x6d;&#64;&#112;&#104;-&#119;&#101;&#105;&#110;&#103;&#97;&#x72;&#x74;&#101;&#110;&#46;&#100;&#x65;</a>
+		</address>
+	</section>
+	<section id="hugo">
+		<p>Made with <a href="https://gohugo.io">Hugo</a></p>
+	</section>
+</footer>

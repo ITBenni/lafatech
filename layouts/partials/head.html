@@ -1,0 +1,19 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>{{ .Site.Title }} - {{ .Title }}</title>
+	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+	<link rel="canonical" href="{{ .Permalink }}">
+	{{/*<link rel="icon" type="image/png" href="http://example.com/myicon.png">*/}}
+
+	{{ .Hugo.Generator }}
+
+	{{ template "_internal/opengraph.html" . }}
+
+	{{ $style := resources.Get "src/main.css" | resources.Minify }}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+	{{ $js := resources.Get "src/nav.js" | resources.Minify | resources.Fingerprint }}
+	<script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+</head>

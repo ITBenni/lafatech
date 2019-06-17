@@ -1,0 +1,40 @@
+<nav>
+	<div>
+		<a href="{{ .Site.BaseURL }}" id="logo" class="logo">{{ .Site.Title }}</a>
+
+		<button type="button" id="menu-icon"></button>
+		<ul>
+			{{ if not .Page.IsHome }}
+			<li>
+				<a href="{{ .Site.BaseURL }}">Home</a>
+			</li>
+			{{ end }}
+
+			{{ $content_dir := .Params.content_dir }}
+			{{ $sections := .Site.GetPage $content_dir }}
+
+			{{ range  ($sections.Resources) sort.ByWeight }}
+				{{ if .Params.nav.visible }}
+					{{ $nav_entry := .Params.nav.shorthand | default .Title }}
+					<li target="#{{ anchorize $nav_entry }}" class="visible">
+						<a href="#{{ anchorize $nav_entry }}">{{ $nav_entry }}</a>
+					</li>
+				{{ end }}
+			{{ end }}
+
+
+			{{ range ((where .Pages "Section" (.CurrentSection.Section | default "index")) sort .ByWeight) }}
+				{{ if .Params.nav.visible }}
+					{{ $nav_entry := .Title }}
+					{{ if (isset .Params.nav "shorthand") }}
+						{{ $nav_entry = .Params.nav.shorthand }}
+					{{ end }}
+
+					<li target="#{{ anchorize .Params.nav.shorthand }}" class="visible">
+						<a href="#{{ anchorize $nav_entry }}">{{ $nav_entry }}</a>
+					</li>
+				{{ end }}
+			{{ end }}
+		</ul>
+	</div>
+</nav>

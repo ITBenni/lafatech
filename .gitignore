@@ -1,0 +1,6 @@
+# Those are mainly pdf documents. We cannot version them anyway.
+static/downloads/*
+
+# The public and resource directories are created by Hugo
+public/*
+resources/*

@@ -1,0 +1,29 @@
+title: Landesfachschaft Technikdidaktik Baden-Württemberg
+baseURL: https://landesfachschaft-technikdidaktik-bw.de
+
+# All language related stuff
+# Because we only have german visitors, this is not that important
+defaultContentLanguage: de
+languageCode: de-de
+languageName: German
+
+# This is opengraph config
+# It is used to display nice links in messengers and social media
+params:
+  description: Die Landesfachschaft ist ein Gremium der Pädagogischen Hochschulen Baden-Württembergs. Wir vertreten die Interessen des Schulfaches Technik.
+  images:
+  - img/logo.png
+  title: Landesfachschaft Technikdidaktik Baden-Württemberg
+
+assetDir: static/
+
+# Wen don't need all this
+disableKinds:
+  - RSS
+  - robotsTXT
+  - sitemap
+  - taxonomy
+  - taxonomyTerm
+
+# This helps to prevent broken links
+canonifyURLs: true
