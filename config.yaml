@@ -27,3 +27,9 @@ disableKinds:
 
 # This helps to prevent broken links
 canonifyURLs: true
+
+# Prevent the new markdown renderer from braking inline HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
