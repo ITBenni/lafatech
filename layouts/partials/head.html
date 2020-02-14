@@ -10,6 +10,22 @@
 	{{ .Hugo.Generator }}
 
 	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+
+	<script type="application/ld+json"> 
+		{
+			"@context": "http://www.schema.org",
+			"@type": "EducationalOrganization",
+			"name": "{{ .Site.Params.Title }}",
+			"url": "{{ .Permalink | safeJS }}",
+			"logo": "{{ "img/logo.png" | absURL | safeJS }}",
+			"description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}",
+			"contactPoint": {
+			  "@type": "ContactPoint",
+			  "telephone": "+497515018323",
+			}
+		}
+	</script>
 
 	{{ $style := resources.Get "src/main.css" | resources.Minify }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
