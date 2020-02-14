@@ -5,6 +5,7 @@
 	<title>{{ .Site.Title }} - {{ .Title }}</title>
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
 	<link rel="canonical" href="{{ .Permalink }}">
+	<meta name="theme-color" content="#800000">
 	{{/*<link rel="icon" type="image/png" href="http://example.com/myicon.png">*/}}
 
 	{{ .Hugo.Generator }}
