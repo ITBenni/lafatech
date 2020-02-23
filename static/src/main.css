@@ -116,7 +116,7 @@ body > footer li { list-style-type: none; }
 
 
 /* Content sections */
-body > main > section { width: 100%; margin-top: 110px; padding-bottom: 25px; }
+body > main > section { width: 100%; margin-top: 110px; padding-bottom: 25px; scroll-margin-top: 100px; }
 body > main > section:not(:last-child) { border-bottom: 1px solid var(--shadow-color); }
 footer a.top { width: 0; height: 0; }
 footer a.top:before { display: block; content: "\f106"; width: 50px; margin: 0 auto; font-size: 50px; font-family: FontAwesome; text-align: center; }
