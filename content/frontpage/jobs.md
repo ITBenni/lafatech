@@ -8,6 +8,8 @@ nav:
 
 Die Landesfachschaft weist auf folgende Stellenausschreibungen ihrer Partner hin:
 
+Eine [Professur](https://stellenangebote.ph-freiburg.de/W-3-Professur-fuer-Technik-und-ihre-Didaktik-mwd-de-j451.html) für Technik und ihre Didaktik an der Pädagogischen Hochschule Freiburg. [mehr...](https://stellenangebote.ph-freiburg.de/W-3-Professur-fuer-Technik-und-ihre-Didaktik-mwd-de-j451.html)
+
 Eine Stelle als [Akademische Rätin/Akademischer Rat (m/w/d) (Bes.Gr. A 13) bzw. Akademische Mitarbeiterin/Akademischer Mitarbeiter (m/w/d)](downloads/435_AkR_AkM_Technik.pdf) an der Pädagogischen Hochschule Freiburg mit den Schwerpunkten Elektrotechnik/Elektronik, Digitaltechnik und Energietechnik. [mehr...](https://stellenangebote.ph-freiburg.de/stellenangebote.html)
 
 
