@@ -32,5 +32,5 @@
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 	{{ $js := resources.Get "src/nav.js" | resources.Minify | resources.Fingerprint }}
-	<script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+	<script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 </head>
