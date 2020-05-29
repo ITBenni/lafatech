@@ -67,6 +67,7 @@ https://color.adobe.com/create/color-wheel/?base=2&rule=Triad&selected=2&name=My
 /* Animations and effects */
 body > * { transition: all 0.25s ease-in-out; }
 nav a:hover { color: var(--main-accent-color); }
+html { scroll-behavior: smooth; }
 
 
 /* Page and body */
