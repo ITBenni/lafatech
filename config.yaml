@@ -21,7 +21,6 @@ assetDir: static/
 disableKinds:
   - RSS
   - robotsTXT
-  - sitemap
   - taxonomy
   - taxonomyTerm
 
