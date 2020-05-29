@@ -1,0 +1,8 @@
+ErrorDocument 500 /404.html
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 401 /404.html
+
+Header add Access-Control-Allow-Origin "landesfachschaft-technikdidaktik-bw.de"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
