@@ -4,7 +4,7 @@
 <ul class="people circle-list">
 	{{ range where $people.Resources ".Params.role" "in" $filter }}
 	<li>
-		<img src="/img/people/{{ safeHTMLAttr .Params.image }}" alt="{{ safeHTMLAttr .Params.academic_title }} {{ safeHTMLAttr .Params.name }}">
+		<img src="/img/people/{{ safeHTMLAttr .Params.image }}" alt="{{ safeHTMLAttr .Params.academic_title }} {{ safeHTMLAttr .Params.name }}" decoding="async" loading="lazy">
 		<p class="name">{{ safeHTMLAttr .Params.academic_title }} {{ safeHTMLAttr .Params.name }}</p>
 		<p>{{ .Params.job }}</p>
 
