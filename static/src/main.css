@@ -187,8 +187,7 @@ ul.people > li > blockquote { margin: 50px 0 auto 0; }
 	h1 { font-size: 30px; }
 	h2 { font-size: 25px; }
 
-	body > header { height: auto; background-position: center; background-image: url("/img/header_watch_small.jpg"); }
-	body > header > h1 { margin-top: 70px;}
+	body > header { height: 250px; background-position: center; background-image: url("/img/header_watch_small.jpg"); margin-top: 50px; }
 	body > header > h2 { margin-bottom: 10px; }
 
 	body > nav { height: 50px; width: 100%; }
