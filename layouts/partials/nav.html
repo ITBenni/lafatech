@@ -23,21 +23,6 @@
 						</li>
 					{{ end }}
 				{{ end }}
-
-				{{/*
-				{{ range sort ((where .Pages "Section" (.CurrentSection.Section | default "index")) .Params.ByWeight) }}
-					{{ if .Params.nav.visible }}
-						{{ $nav_entry := .Title }}
-						{{ if (isset .Params.nav "shorthand") }}
-							{{ $nav_entry = .Params.nav.shorthand }}
-						{{ end }}
-
-						<li target="#{{ anchorize .Params.nav.shorthand }}" class="visible">
-							<a href="#{{ anchorize $nav_entry }}">{{ $nav_entry }}</a>
-						</li>
-					{{ end }}
-				{{ end }}
-				*/}}
 			{{ end }}
 		</ul>
 	</div>
