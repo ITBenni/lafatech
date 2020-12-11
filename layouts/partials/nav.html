@@ -15,7 +15,7 @@
 			{{ if $content_dir }}
 				{{ $sections := .Site.GetPage $content_dir }}
 
-				{{ range  ($sections.Resources) sort.ByWeight }}
+				{{ range sort ($sections.Resources) .Params.ByWeight }}
 					{{ if .Params.nav.visible }}
 						{{ $nav_entry := .Params.nav.shorthand | default .Title }}
 						<li target="#{{ anchorize $nav_entry }}" class="visible">
@@ -24,8 +24,8 @@
 					{{ end }}
 				{{ end }}
 
-
-				{{ range ((where .Pages "Section" (.CurrentSection.Section | default "index")) sort .ByWeight) }}
+				{{/*
+				{{ range sort ((where .Pages "Section" (.CurrentSection.Section | default "index")) .Params.ByWeight) }}
 					{{ if .Params.nav.visible }}
 						{{ $nav_entry := .Title }}
 						{{ if (isset .Params.nav "shorthand") }}
@@ -37,6 +37,7 @@
 						</li>
 					{{ end }}
 				{{ end }}
+				*/}}
 			{{ end }}
 		</ul>
 	</div>
