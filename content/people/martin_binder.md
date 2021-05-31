@@ -3,8 +3,8 @@ title: "martin_binder"
 date: 2019-05-12T23:54:35+02:00
 name: Martin Binder
 academic_title: "PD Dr. habil."
-role:  "chef"
-job: "Erster Vorsitzender"
+role:  "none"
+job: ""
 institution: "PH Weingarten"
 phone: ""
 email: binderm@ph-weingarten.de
