@@ -99,7 +99,7 @@ body > nav.scrolled { height: 40px; line-height: 40px; background-color: var(--b
 body > nav > div { display: flex; flex-wrap: nowrap; justify-content: space-between; max-width: 1000px; margin: 0 auto; height: 100%; }
 
 body > nav ul { flex: 0 1 auto; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; height: 100%; }
-body > nav ul > li { flex: 0 1 auto; margin-right: 25px; text-align: center; list-style-type: none; border-bottom: 3px solid transparent;}
+body > nav ul > li { flex: 0 1 auto; margin-right: 25px; display: grid; place-items: center; list-style-type: none; border-bottom: 3px solid transparent;}
 body > nav ul > li:last-child {margin: 0; }
 body > nav ul > li.visible { border-color: var(--main-accent-color); color: var(--main-accent-color); }
 
