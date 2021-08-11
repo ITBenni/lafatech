@@ -21,8 +21,9 @@
 
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-	{{ $js := resources.Get "src/nav.js" | resources.Minify | resources.Fingerprint }}
-	<script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+	{{ $opts := dict "minify" "true" }}
+	{{ $js := resources.Get "src/nav.js" | js.Build $opts | resources.Fingerprint }}
+	<script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
 	{{ template "_internal/opengraph.html" . }}
 	{{ template "_internal/twitter_cards.html" . }}
