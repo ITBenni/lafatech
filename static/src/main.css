@@ -116,7 +116,7 @@ body > footer { margin-bottom: 25px; padding: 0 calc(calc(100% - 900px) / 2); di
 body > footer > section { flex: 0 1 250px; }
 body > footer > section:nth-child(1), body > footer > section:nth-child(3) {margin-top: 55px; }
 body > footer p { display: block; margin: 0 auto; }
-body > footer address { font-style: normal; }
+address { font-style: normal; }
 body > footer li { list-style-type: none; }
 
 

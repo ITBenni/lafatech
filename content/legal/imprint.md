@@ -13,16 +13,13 @@ Landesfachschaft Technikdidaktik Baden-Württemberg
 
 #### Vertretungsberechtigt
 
-Prof. Dr. Christian Wiesmüller  
-Postfach 11 10 62  
-76060 Karlsruhe  
+{{< contact/address >}}
 
 #### Kontakt
 
-Tel.: <a href="tel:+497219254601">+49 721 925 4601</a>  
+{{< contact/phone >}}
 
-<a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#x63;&#x68;&#x72;&#x69;&#x73;&#116;&#105;&#97;n&#x2e;&#x77;&#x69;&#x65;&#115;&#109;&#x75;&#x65;&#108;l&#x65;r&#64;&#x70;&#104;&#45;&#107;&#97;&#114;ls&#114;&#117;&#104;&#101;.&#x64;&#101;">&#x63;&#x68;&#x72;&#x69;&#x73;&#116;&#105;&#97;n&#x2e;&#x77;&#x69;&#x65;&#115;&#109;&#x75;&#x65;&#108;l&#x65;r&#64;&#x70;&#104;&#45;&#107;&#97;&#114;ls&#114;&#117;&#104;&#101;.&#x64;&#101;</a>
-
+{{< contact/mail >}}
 
 ### Verantwortlich für die Homepage
 

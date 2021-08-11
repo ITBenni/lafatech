@@ -14,6 +14,14 @@ params:
   images:
   - img/logo.png
   title: Landesfachschaft Technikdidaktik Baden-Württemberg
+  contact: 
+    name: Lars Windelband
+    address: 
+      street: Gsteinig 17
+      zip: 73098
+      city: Rechberghausen
+    mail: '<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#108;&#97;&#x72;&#x73;&#46;w&#105;&#110;&#100;&#x65;&#108;&#98;a&#110;&#x64;&#64;&#x70;&#x68;&#x2d;&#x67;&#x6d;&#x75;&#x65;&#x6e;d&#46;&#100;&#101;">&#108;&#97;&#x72;&#x73;&#46;w&#105;&#110;&#100;&#x65;&#108;&#98;a&#110;&#x64;&#64;&#x70;&#x68;&#x2d;&#x67;&#x6d;&#x75;&#x65;&#x6e;d&#46;&#100;&#101;</a>'
+    phone: '<a href="&#116;&#x65;&#x6c;:&#43;&#52;&#57;&#x37;&#x31;7&#x31;&#57;&#x38;3&#45;&#50;&#55;&#x37;">&#x2b;&#52;&#57;&#32;&#55;&#49;&#55;&#x31;&#32;&#57;&#x38;&#x33;&#x2d;&#50;&#55;&#x37;</a><br>'
 
 assetDir: static/
 
