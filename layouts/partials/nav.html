@@ -18,7 +18,7 @@
 				{{ range sort ($sections.Resources) .Params.ByWeight }}
 					{{ if .Params.nav.visible }}
 						{{ $nav_entry := .Params.nav.shorthand | default .Title }}
-						<li target="#{{ anchorize $nav_entry }}" class="visible">
+						<li target="#{{ anchorize $nav_entry }}" class="">
 							<a href="#{{ anchorize $nav_entry }}">{{ $nav_entry }}</a>
 						</li>
 					{{ end }}

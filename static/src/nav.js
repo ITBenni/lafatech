@@ -31,20 +31,19 @@ function visiblityCallback(entries, observer) {
 	for(const entry of entries) {
 		const selector = `li[target~="#${entry.target.id}"]`;
 		const navElement = document.querySelector(selector);
-	
-		if(navElement)
-			navElement.classList.toggle('visible');
+
+		if(!navElement)
+			continue
+
+		if (entry.isIntersecting) {
+			navElement.classList.add('visible');
+		} else {
+			navElement.classList.remove('visible');	
+		}
 	}
 };
 
 // Visibility indicator in top navigation
-//
-// TODO:
-// This requires a hack for now.
-// The observer is intended to fire whenever the user scrolls the section of the page into the viewport.
-// However, this event gets also fired on page load (why I don't know).
-// This messes up the state kept via a css-class.
-// To patch this the concerning elements have the css-class pre-applied.
 const observer = new IntersectionObserver(visiblityCallback, {
 	root: null,
 	rootMargin: '0px',
