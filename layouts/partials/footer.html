@@ -7,15 +7,15 @@
 	<section id="contact">
 		<h3>Kontakt</h3>
 
-		<address>
-			{{ .Site.Params.contact.name }}<br>
-			{{ .Site.Params.contact.address.street }}<br>
-			{{ .Site.Params.contact.address.zip }} {{ .Site.Params.contact.address.city }}
-
-			<br><br>
-			{{ .Site.Params.contact.phone | safeHTML }}
-			{{ .Site.Params.contact.mail | safeHTML }}
-		</address>
+		{{ range .Site.Params.contacts }}	
+			<address>
+				{{ .name }}<br>
+				{{ .address.street }}<br>
+				{{ .address.zip }} {{ .address.city }}<br>
+				{{ .phone | safeHTML }}<br>
+				{{ .mail | safeHTML }}
+			</address>
+		{{ end }}
 	</section>
 	<section id="hugo">
 		<p>Made with <a href="https://gohugo.io">Hugo</a></p>
