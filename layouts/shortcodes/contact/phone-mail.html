@@ -1,0 +1,7 @@
+{{ range .Site.Params.contacts }}
+	<address>
+		{{ .name }}<br>
+		{{ .phone | safeHTML }}<br>
+		{{ .mail | safeHTML }}
+	</address>
+{{ end }}

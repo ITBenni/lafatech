@@ -1,5 +1,7 @@
-<address>
-    {{ .Site.Params.contact.name }}<br>
-    {{ .Site.Params.contact.address.street }}<br>
-    {{ .Site.Params.contact.address.zip }} {{ .Site.Params.contact.address.city }}<br>
-</address>
+{{ range .Site.Params.contacts }}	
+	<address>
+		{{ .name }}<br>
+		{{ .address.street }}<br>
+		{{ .address.zip }} {{ .address.city }}
+	</address>
+{{ end }}
