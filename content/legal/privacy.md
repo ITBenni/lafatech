@@ -28,13 +28,12 @@ Landesfachschaft Technikdidaktik Baden-Württemberg
 
 ### Kontakt
 
-{{< contact/phone >}}
-
-{{< contact/mail >}}
+{{< contact/phone-mail >}}
 
 
 ### Impressum:
-<https://landesfachschaft-technikdidaktik-bw.de/recht//#impressum>.
+
+[https://landesfachschaft-technikdidaktik-bw.de/recht#impressum](/recht#impressum)
 
 
 ### Übersicht der Verarbeitungen {#mOverview}

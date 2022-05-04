@@ -17,22 +17,17 @@ Landesfachschaft Technikdidaktik Baden-Württemberg
 
 #### Kontakt
 
-{{< contact/phone >}}
-
-{{< contact/mail >}}
+{{< contact/phone-mail >}}
 
 ### Verantwortlich für die Homepage
 
 Martin Binder  
-
 PH Weingarten  
-
 88250 Weingarten
 
 #### Kontakt
 
 Tel.: <a href="tel:+497515018323">+49 751 501 8323</a>  
-
 <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x62;i&#110;d&#101;&#x72;&#109;&#x40;&#x70;&#x68;&#45;w&#x65;&#x69;&#x6e;&#103;&#x61;&#x72;&#x74;&#101;&#110;&#x2e;&#100;&#101;">&#x62;i&#110;d&#101;&#x72;&#109;&#x40;&#x70;&#x68;&#45;w&#x65;&#x69;&#x6e;&#103;&#x61;&#x72;&#x74;&#101;&#110;&#x2e;&#100;&#101;</a>
 
 
