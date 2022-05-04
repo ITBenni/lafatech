@@ -11,15 +11,14 @@
 	{{ .Hugo.Generator }}
 
 	<!-- Mark the most visual critical files for preloading to improve loading speed-->
-	{{ $style := resources.Get "src/main.css" | resources.Minify }}
-	<link rel="preload" href="{{ $style.RelPermalink }}" as="style">
 	<link rel="preload" as="image" href="/img/header_watch_small.jpg">
 	<link rel="preload" as="image" href="/img/logo.png">
 	<link rel="preload" href="/fonts/roboto/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
 	<link rel="preload" href="/fonts/roboto/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin>
 
-
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	{{ with resources.Get "src/main.css" | resources.Minify }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
 
 	{{ $opts := dict "minify" "true" }}
 	{{ $js := resources.Get "src/nav.js" | js.Build $opts | resources.Fingerprint }}
