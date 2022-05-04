@@ -9,10 +9,6 @@
 	<section id="{{ anchorize .Params.nav.shorthand}}">
 		<header>
 			<h2>{{ .Title }}</h2>
-
-			{{ if eq .File.BaseFileName "current"}}
-			<p class="publishDate">Stand: {{ .Lastmod.Day }} {{ index .Site.Data.months (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}</p>
-			{{ end }}
 		</header>
 
 		{{ .Content | safeHTML }}
